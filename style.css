@@ -1,0 +1,37 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+}
+
+
+body{
+    background-color: chocolate;
+    margin: 20px;
+    padding: 100px;
+}
+span{
+    font-style: italic;
+}
+span.bold{
+    font-weight: bold;
+}
+ul{
+    list-style-type: none
+}
+
+.img-container{
+    width: 70%;
+    height: 400px;
+    border: 2px solid lightgreen;
+    background-color: darkslateblue;
+    margin: 0 auto;       /*центрирование блока */
+}
+
+.img-container > a{   /*  >  позволяет обраиться к элементу непосредственно вложенному в него */
+    cursor: crosshair;
+}
+
+
+.img-container img{  /* пробел позволяет обратиться к элементу любой вложенности */
+    width: 100%;
+}

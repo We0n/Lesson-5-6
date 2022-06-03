@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        p{
+            color: aqua;
+            border: 2px solid black;
+        }
+        .base{
+            border: 2px outset brown ;
+        }
+        .extra-sale{
+            border: 2px outset yellow ;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Подключение CSS к документу. 4 способа:
+        1. inline-style (линейный)
+        <p style="font-size: 3em; color: blue;">
+        Не рекомендуемый способб по причине невозможности реиспользования и большого количества css в разметке.
+        Из плюсов - Имеет самый высокий приоритет.
+
+        2. тег <head><style> ....  </head></style> 
+        имееет средний приоритет
+        Не рекомендуемый способ. Из-за увеличения веса страницы.
+        Примечание: можно использовать в учебных проектах, но не в продакшене.
+
+        3. Через @import 
+        Приоритет ниже среднего
+        Используется редкоб а если нужен, то для подключения внешних ресурсов(внешний css файл)
+
+        4. Тег <link></link>
+        Имеет самый низкий приоритет.
+        Используется повсеместно.
+        Позволяет подключить(внешний и внутренний) css документ к html через атрибут . 
+     -->
+    <p style="font-size: 3em; color: blue;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque cumque incidunt
+        aspernatur reprehenderit.</p>
+    <p class="base extra-sale">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque cumque incidunt
+        aspernatur reprehenderit.</p>
+    
+    <i>Lorem, ipsum dolor.</i>
+    <hr>
+    <em>Lorem, ipsum dolor.</em>
+    <br>
+    <br>
+    <span>Lorem, ipsum dolor.</span>
+    <hr>
+    <strong>Lorem, ipsum dolor.</strong>
+    <hr>
+    <span class = "bold">Lorem, ipsum dolor.</span>
+    <hr>
+    <tt>Lorem, ipsum dolor.</tt>
+    <hr>
+    <p>Lorem, <u><b><i>ipsum</i></b></u> <del>dolor</del>.</p> 
+
+    <ul>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Delectus, cum quidem.</li>
+        <li>Libero, omnis doloremque!</li>
+        <li>Quis, nemo earum!</li>
+        <li>Voluptatum, impedit excepturi!</li>
+        <li>Eos, repellat sed.</li>
+    </ul>
+
+    <ol>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Nostrum vel ipsum cum.</li>
+        <li>Nemo deserunt itaque esse?</li>
+    </ol>
+
+   <div class="img-container">
+       <h2>Picture</h2>
+       <a  href="">
+           <img src="https://play-lh.googleusercontent.com/MmLHNN4_lwIN7kMG7XWnOxSYbEju-FBMEn8oDj4Xt8t9EnnH6S6GQeMHJDWpGfeDOSpM" alt="что на картинке">
+        </a>
+            
+   </div>
+
+</body>
+
+</html>
